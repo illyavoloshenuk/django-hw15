@@ -1,0 +1,20 @@
+DEBUG 2026-05-22 16:25:05,360 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2026-05-22 16:25:05,364 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2026-05-22 16:25:28,097 utils (0.000) SELECT "categories_category"."id", "categories_category"."title", "categories_category"."is_deleted", "categories_category"."delete_at" FROM "categories_category" WHERE NOT "categories_category"."is_deleted" ORDER BY "categories_category"."id" ASC LIMIT 7; args=(); alias=default
+DEBUG 2026-05-22 16:26:21,451 utils (0.001) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Учеба', 0, NULL) RETURNING "categories_category"."id"; args=('Учеба', False, None); alias=default
+DEBUG 2026-05-22 16:26:37,062 utils (0.001) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Дом', 0, NULL) RETURNING "categories_category"."id"; args=('Дом', False, None); alias=default
+DEBUG 2026-05-22 16:26:52,840 utils (0.003) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Спортзал', 0, NULL) RETURNING "categories_category"."id"; args=('Спортзал', False, None); alias=default
+DEBUG 2026-05-22 16:27:15,091 utils (0.002) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Дача', 0, NULL) RETURNING "categories_category"."id"; args=('Дача', False, None); alias=default
+DEBUG 2026-05-22 16:27:26,822 utils (0.001) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Гараж', 0, NULL) RETURNING "categories_category"."id"; args=('Гараж', False, None); alias=default
+DEBUG 2026-05-22 16:27:32,284 utils (0.000) SELECT "categories_category"."id", "categories_category"."title", "categories_category"."is_deleted", "categories_category"."delete_at" FROM "categories_category" WHERE NOT "categories_category"."is_deleted" ORDER BY "categories_category"."id" ASC LIMIT 7; args=(); alias=default
+DEBUG 2026-05-22 16:27:49,686 utils (0.001) INSERT INTO "categories_category" ("title", "is_deleted", "delete_at") VALUES ('Бар', 0, NULL) RETURNING "categories_category"."id"; args=('Бар', False, None); alias=default
+DEBUG 2026-05-22 16:27:53,089 utils (0.000) SELECT "categories_category"."id", "categories_category"."title", "categories_category"."is_deleted", "categories_category"."delete_at" FROM "categories_category" WHERE NOT "categories_category"."is_deleted" ORDER BY "categories_category"."id" ASC LIMIT 7; args=(); alias=default
+DEBUG 2026-05-22 16:30:44,243 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2026-05-22 16:30:44,247 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2026-05-22 16:30:53,752 utils (0.000) SELECT "categories_category"."id", "categories_category"."title", "categories_category"."is_deleted", "categories_category"."delete_at" FROM "categories_category" WHERE NOT "categories_category"."is_deleted" ORDER BY "categories_category"."id" ASC LIMIT 7; args=(); alias=default
