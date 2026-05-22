@@ -1,1 +1,8 @@
 INFO 2026-05-22 16:30:53,755 log "GET /api/categories/ HTTP/1.1" 200 486
+WARNING 2026-05-22 16:41:30,085 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2026-05-22 16:41:50,067 log "POST /api/token/ HTTP/1.1" 200 489
+INFO 2026-05-22 16:42:44,489 log "GET /api/categories/ HTTP/1.1" 200 420
+WARNING 2026-05-22 16:43:07,808 log "GET /api/categories/ HTTP/1.1" 401 58
+INFO 2026-05-22 16:43:40,156 log "GET /api/categories/ HTTP/1.1" 200 420
+WARNING 2026-05-22 16:43:50,144 log "GET /api/categories/?cursor=cD02 HTTP/1.1" 401 58
+INFO 2026-05-22 16:43:58,053 log "GET /api/categories/?cursor=cD02 HTTP/1.1" 200 228
