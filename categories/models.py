@@ -26,10 +26,31 @@ class Category(models.Model):
 
 
 class Task(models.Model):
+    STATUS_NEW = 'new'
+    STATUS_IN_PROGRESS = 'in_progress'
+    STATUS_DONE = 'done'
+    STATUS_CLOSED = 'closed'
+
+    STATUS_CHOICES = [
+        (STATUS_NEW, 'Новая'),
+        (STATUS_IN_PROGRESS, 'В процессе'),
+        (STATUS_DONE, 'Выполнена'),
+        (STATUS_CLOSED, 'Закрыта'),
+    ]
+
     title = models.CharField(max_length=255)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tasks')
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=STATUS_NEW)
+    previous_status = models.CharField(max_length=20, blank=True, null=True)
     is_deleted = models.BooleanField(default=False)
+
+    def save(self, *args, **kwargs):
+        if self.pk:
+            old = Task.objects.filter(pk=self.pk).first()
+            if old:
+                self.previous_status = old.status
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
