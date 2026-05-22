@@ -30,3 +30,13 @@ INFO 2026-05-22 17:33:50,657 log "GET /static/drf-yasg/swagger-ui-dist/swagger-u
 INFO 2026-05-22 17:33:50,711 log "GET /static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 200 1510271
 INFO 2026-05-22 17:33:50,941 log "GET /static/drf-yasg/swagger-ui-dist/favicon-32x32.png HTTP/1.1" 200 628
 INFO 2026-05-22 17:33:51,075 log "GET /swagger/?format=openapi HTTP/1.1" 200 9579
+INFO 2026-05-22 18:01:04,866 log "POST /api/auth/register/ HTTP/1.1" 201 107
+WARNING 2026-05-22 18:01:34,441 log "POST /api/auth/register/ HTTP/1.1" 400 204
+INFO 2026-05-22 18:02:02,514 log "POST /api/auth/login/ HTTP/1.1" 200 543
+WARNING 2026-05-22 18:02:31,079 log "POST /api/auth/login/ HTTP/1.1" 401 60
+INFO 2026-05-22 18:03:52,960 log "POST /api/auth/logout/ HTTP/1.1" 200 57
+INFO 2026-05-22 18:05:15,823 log "POST /api/auth/login/ HTTP/1.1" 200 543
+WARNING 2026-05-22 18:06:08,477 log "POST /api/auth/logout/ HTTP/1.1" 400 79
+INFO 2026-05-22 18:06:36,229 log "POST /api/auth/logout/ HTTP/1.1" 200 57
+WARNING 2026-05-22 18:07:16,388 log "POST /api/auth/logout/ HTTP/1.1" 401 58
+WARNING 2026-05-22 18:07:32,098 log "POST /api/auth/logout/ HTTP/1.1" 400 79
